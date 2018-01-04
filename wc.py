@@ -23,15 +23,17 @@ def main():
     for item in set(words):
         print("{}\t{}".format(words.count(item),item))
 
+
 def process(line):
     """
     Processes a line by removing (white)spaces
     and lowering case.
     """
     new = line.rstrip()
-    #new = new.replace(" ","")
+    # new = new.replace(" ","")
     new = new.lower()
     return new
+
 
 if __name__ == "__main__":
     main()

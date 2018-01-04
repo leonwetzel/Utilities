@@ -6,6 +6,7 @@
 
 import sys
 
+
 def main():
     """
     Program which splits strings by commas
@@ -20,8 +21,9 @@ def main():
             for word in sentence:
                 print(word)
         except ValueError:
-            sys.write.stderr("Argument invalid or missing!\nPlease enter the command as follows: 'cat YOUR_INPUT.in | python stripper.py -s' OR 'cat YOUR_INPUT.in | python stripper.py -c'")
+            sys.stderr.write("Argument invalid or missing!\nPlease enter the command as follows: 'cat YOUR_INPUT.in | python stripper.py -s' OR 'cat YOUR_INPUT.in | python stripper.py -c'")
             sys.exit()
+
 
 def determine_delimiter(choice):
     """
